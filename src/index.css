@@ -19,17 +19,49 @@
   left: 0;
 } 
 
-.app .search {
-  text-align: center;
-  padding: 1.5rem;
+.app .headerBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5rem;
+  background: rgb(229, 99, 34);
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+}
+
+.app .header {
+  display: flex;
+}
+
+.app .search { 
+  text-align: right; 
+  padding: 1rem;
 }
 
 .app .input {
   padding: 1rem 1.5rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
   border: 1px solid #ccc;
   border-radius: 25px;
   background: white;
+}
+
+h1 {
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+button {
+  background: rgb(47, 173, 68);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
 ::placeholder {
