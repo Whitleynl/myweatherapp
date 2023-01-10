@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios'; 
 import './index.css'; 
+import SearchBar from './SearchBar';
 
 function App() {
   // set the state for the weather data and the city
@@ -83,6 +84,9 @@ function App() {
     <div className="App">
       <HeaderBar city={city} setCity={setCity} /> 
       <Results weatherData={weatherData} /> 
+      <div>
+        <SearchBar setCity={setCity} searchCity={searchCity} /> 
+      </div>
     </div>
   );
 }
