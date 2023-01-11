@@ -1,10 +1,8 @@
 import React, {useState} from 'react';
-import Results from './Results';
 
 const SearchBar = (props) => {
      const {setCity, searchCity} = props;
      const [inputValue, setInputValue] = useState('');
-useState('');
 
      const handleSubmit = (event) => {
            event.preventDefault();
@@ -20,7 +18,7 @@ useState('');
                     onChange={event => setInputValue(event.target.value)}
                     placeholder="Enter a city"
                     type="text"/>
-               <button type="button" onClick= {handleSubmit}>Get Weather</button>
+               <button type="submit">Get Weather</button>
           </form>
           </div>
      );

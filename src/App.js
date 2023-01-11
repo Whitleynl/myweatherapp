@@ -10,6 +10,7 @@ function App() {
   const [weatherData, setWeatherData] = useState([]); 
   const [city, setCity] = useState(''); 
   const weatherAPI = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&type=accurate&APPID=1b8f10e6dec639a10401c3ffbc2a56c3&cnt=5`;
+  
   useEffect(() => { 
     searchCity(); 
   }, [weatherAPI, setWeatherData]); 
@@ -37,9 +38,9 @@ function App() {
 
   return (
     <div className="App">
-      <MainPage />
-      <Results weatherData={weatherData} />
-      <DetailPage />
+      <MainPage weatherData={weatherData} setCity={setCity} />
+       {<Results weatherData={weatherData}/>}
+      <DetailPage weatherData={weatherData} />
     </div>
   );
 }

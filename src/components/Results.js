@@ -12,29 +12,29 @@ function formatDate(dateTimeString) {
      return date.toLocaleDateString('en-US', options);
    }
 
+Number.prototype.kelvinToFahrenheit = function() {
+  return Math.round((this - 273.15) * 9/5 + 32);
+}
+
    return (
     <div className="Results">
       {props.weatherData.map((data, index) => (
           <Link 
             key={index} 
             className="Result"
-            to={{ 
-              pathname: `./DetailPage/${data.dt}`, 
-              state: {
+            to={`./DetailPage/${data.dt}`}
+            state={{ 
+                city: props.city,
+                date: data.dt,
                 humidity: data.main.humidity,
                 temp_min: data.main.temp_min,
                 temp_max: data.main.temp_max,
                 description: data.weather[0].description,
-                city: props.city
-              }
-            }} 
-          >
-            <div className="date">{props.formatDate(data.dt_txt)}</div>
-            <div className="description">{data.weather[0].description}</div>
-            <div className="temp">Temp: {data.main.temp}</div>
-            <div className="humidity">Humidity: {data.main.humidity}</div>
-            <div className="temp_min">Min Temp: {data.main.temp_min}</div>
-            <div className="temp_max">Max Temp: {data.main.temp_max}</div>
+            }}> 
+            <h1 className="city">{props.city}</h1>
+            <img src={require(`/Users/nathanwhitley/Desktop/myweatherapp/src/Assets/weather-icons/10d.svg`)} alt="weather icon" />
+                       
+            <div className="date">{formatDate(data.dt_txt)}</div>
           </Link>
       ))}
     </div>
