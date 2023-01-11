@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import Results from './Results';
 
 const SearchBar = (props) => {
      const {setCity, searchCity} = props;

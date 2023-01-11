@@ -16,7 +16,6 @@ const DetailPage = (props) => {
           <p>max temp: {temp_max}</p>
           <p>humidity: {humidity}</p>
           </div>
-
      );
 };
 
