@@ -1,6 +1,5 @@
-import { useState, useEffect } from 'react';
-import axios from 'axios'; 
-import './index.css'; 
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import MainPage from './components/MainPage';
 import Results from './components/Results';
 import DetailPage from './components/DetailPage';
@@ -39,7 +38,7 @@ function App() {
   return (
     <div className="App">
       <MainPage weatherData={weatherData} setCity={setCity} />
-       {<Results weatherData={weatherData}/>}
+      <Results weatherData={weatherData} />
       <DetailPage weatherData={weatherData} />
     </div>
   );
