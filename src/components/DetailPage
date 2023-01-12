@@ -7,7 +7,7 @@ const DetailPage = () => {
      if (!location?.state) {  
           return null;
      } 
-     const {dt, humidity, temp_min, temp_max, description, city} = location?.state;
+     const {dt, humidity, temp_min, temp_max, description, city} = location?.state; 
 
      function formatDate(dateTimeString) {
           const date = new Date(dateTimeString);
@@ -16,7 +16,7 @@ const DetailPage = () => {
          }
 
      Number.prototype.kelvinToFahrenheit = function() {
-          return Math.round((this - 273.15) * 9/5 + 32);
+          return Math.round((this - 273.15) * 9/5 + 32); 
      }
      
      return (

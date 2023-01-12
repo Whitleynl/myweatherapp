@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import axios from 'axios';
-import Results from './Results';
+import Results from './Results'; 
 import SearchBar from './SearchBar';
 
 
@@ -24,9 +24,9 @@ function formatDate(dateTimeString) {
      }
    
      return (
-       <div className="main-page">
-         <SearchBar city={city} setCity={setCity} searchCity={searchCity} /> 
-         <Results weatherData={weatherData} formatDate={formatDate}/>
+       <div className="main-page"> 
+         <SearchBar city={city} setCity={setCity} searchCity={searchCity} />  
+         <Results weatherData={weatherData} formatDate={formatDate}/> 
        </div>
      );
    }
