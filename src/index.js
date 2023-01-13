@@ -1,13 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
-import MainContainer from './components/MainContainer';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import HeaderBar from './components/HeaderBar';
+import MainPage from './components/MainPage';
+import Results from './components/Results';
+import DetailPage from './components/DetailPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <BrowserRouter>
-    <MainContainer />
+    <HeaderBar />
+    <Routes>
+    <Route path="/" element={<MainPage />} />
+    <Route path="/Results" element={<Results />} />
+    <Route path="/DetailPage/:id" element={<DetailPage />} />
+    </Routes>
   </BrowserRouter>
 );
 
