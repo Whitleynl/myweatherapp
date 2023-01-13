@@ -1,17 +1,15 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 
-const SearchBar = (props) => {
-     const {setCity, searchCity} = props;
-     const [inputValue, setInputValue] = useState('');
+const SearchBar = ({ setCity }) => {
+  const [inputValue, setInputValue] = useState('');
 
-     const handleSubmit = (event) => {
-           event.preventDefault();
-               setCity(inputValue);
-               searchCity();
-      };
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    setCity(inputValue);
+};
 
-     return (
-          <div className="SearchBar">
+return (
+     <div className="SearchBar">
           <form onSubmit={handleSubmit}>
                <input
                     value={inputValue}
@@ -20,7 +18,7 @@ const SearchBar = (props) => {
                     type="text"/>
                <button type="submit">Get Weather</button>
           </form>
-          </div>
+     </div>
      );
 };
 
