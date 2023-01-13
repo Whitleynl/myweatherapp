@@ -37,7 +37,7 @@ function App() {
 
   return (
     <div className="App">
-      <MainPage weatherData={weatherData} setCity={setCity} />
+      <MainPage weatherData={weatherData} setCity={setCity} searchCity={searchCity} />
       <Results weatherData={weatherData} />
       <DetailPage weatherData={weatherData} />
     </div>

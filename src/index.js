@@ -5,6 +5,7 @@ import HeaderBar from './components/HeaderBar';
 import MainPage from './components/MainPage';
 import Results from './components/Results';
 import DetailPage from './components/DetailPage';
+import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
