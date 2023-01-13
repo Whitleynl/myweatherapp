@@ -14,8 +14,8 @@ function MainPage({searchCity}) {
 
   return (
     <div className="main-page"> 
-      <HeaderBar searchCity={searchCity} setCity={setCity}/>
       <Results weatherData={weatherData} formatDate={formatDate}/> 
+      <HeaderBar searchCity={searchCity} setCity={setCity} setWeatherData={setWeatherData} city={city}/>
     </div>
   );
 }
