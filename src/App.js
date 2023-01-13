@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import MainPage from './components/MainPage';
 import Results from './components/Results';
 import DetailPage from './components/DetailPage';
 import HeaderBar from './components/HeaderBar';
-import SearchBar from './components/SearchBar';
 
 function App() {
   // set the state for the weather data and the city

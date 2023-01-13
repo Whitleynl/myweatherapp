@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import HeaderBar from './HeaderBar';
 import Results from './Results'; 
 import SearchBar from './SearchBar';
 

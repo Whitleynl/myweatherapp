@@ -1,6 +1,5 @@
 import React from "react";
 import { useLocation } from "react-router-dom"
-import HeaderBar from "./HeaderBar";
 
 const DetailPage = () => {
      const location = useLocation();
@@ -22,12 +21,12 @@ const DetailPage = () => {
      
      return (
           <div className="DetailPage">
-          <h2>{formatDate(dt)}</h2>
-          <p>City: {city}</p>
-          <p>Description: {description}</p>
-          <p>min temp: {temp_min.kelvinToFahrenheit()}°</p>
-          <p>max temp: {temp_max.kelvinToFahrenheit()}°</p>
-          <p>humidity: {humidity}%</p>
+          <h1>{formatDate(dt)}</h1>
+          <h3>City: {city}</h3>
+          <h3>Description: {description}</h3>
+          <h3>min temp: {temp_min.kelvinToFahrenheit()}°</h3>
+          <h3>max temp: {temp_max.kelvinToFahrenheit()}°</h3>
+          <h3>humidity: {humidity}%</h3>
           </div>
      );
 };

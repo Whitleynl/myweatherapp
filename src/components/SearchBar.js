@@ -25,5 +25,4 @@ const SearchBar = ({ setCity, searchCity }) => {
 };
 
 
-
 export default SearchBar;

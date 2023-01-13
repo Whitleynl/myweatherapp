@@ -31,10 +31,9 @@ Number.prototype.kelvinToFahrenheit = function() {
                 temp_max: data.main.temp_max,
                 description: data.weather[0].description,
             }}> 
-            <h1 className="city">{props.city}</h1>
-            <img src="../Assets/weather-icons/10d.svg" alt="icon" />
-                       
-            <div className="date">{formatDate(data.dt_txt)}</div>
+            <h1 className="city">{props.city}</h1> 
+            <img src="../Assets/weather-icons/10d.svg" alt="icon" />          
+            <div><h2 className="date">{formatDate(data.dt_txt)}</h2></div>
           </Link>
       ))}
     </div>

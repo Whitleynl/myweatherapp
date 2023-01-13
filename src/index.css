@@ -5,7 +5,6 @@
 }
 
 
-
 .App {
   height: 100vh;
   width: 100vw;
@@ -13,22 +12,18 @@
   background: url('./Assets/pattern.svg') no-repeat center center/cover;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-}
-
 .HeaderBar {
-  background-color: #f5f5f5;
+  background-color: #efbaba;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
 }
 
-.header h1 {
-  font-size: 36px;
-  margin: 0;
+.header h1 { 
+  font-family: 'Futura', sans-serif;
+  font-size: 40px;
+  margin: auto auto 20px auto;
 }
 
 .search {
@@ -44,6 +39,7 @@ body {
 }
 
 .search input {
+  font-family: 'Futura', sans-serif;
   padding: 10px;
   font-size: 16px;
   border: none;
@@ -88,6 +84,12 @@ body {
 }
 
 .Result h1 {
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+}
+
+.Result h2 {
+  font-family: 'Futura', sans-serif;
   margin: 0;
 }
 
@@ -105,8 +107,21 @@ body {
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  background-color: #4CAF50;
 }
 
 .DetailPage h1 {
+  font-family: Futura;
+  font-size: 40px;
   margin: 0;
+}
+
+.DetailPage h3 {
+  font-family: Futura;
+  margin: 0;
+}
+
+::placeholder {
+  font-size: 18px;
+  color: #ccc;
 }
