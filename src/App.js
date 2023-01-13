@@ -3,6 +3,8 @@ import axios from 'axios';
 import MainPage from './components/MainPage';
 import Results from './components/Results';
 import DetailPage from './components/DetailPage';
+import HeaderBar from './components/HeaderBar';
+import SearchBar from './components/SearchBar';
 
 function App() {
   // set the state for the weather data and the city
@@ -17,35 +19,23 @@ function App() {
   const searchCity = () => { 
     axios.get(weatherAPI).then((response) => {
       setWeatherData(response.data.list); 
-      console.log(response.data.list); 
-      for (let i = 0; i < response.data.list.length; i++) {
-        console.log(response.data.list[i].dt_txt);
-        console.log(response.data.list[i].main.temp);
-        console.log(response.data.city.name);
-        console.log(response.data.list[i].weather[0].description);
-        console.log(response.data.list[i].main.temp_min);
-        console.log(response.data.list[i].main.temp_max);
-        console.log(response.data.list[i].main.humidity);
-      }
-
-      for (let i = 0; i < response.data.list.length; i++) {
-        console.log(response.data.list[i].weather[0].description);
-      }
     });
   };
 
 
   return (
     <div className="App">
-      <MainPage weatherData={weatherData} setCity={setCity} searchCity={searchCity} />
-      <Results weatherData={weatherData} />
-      <DetailPage weatherData={weatherData} />
+      <div className='header'>
+        <HeaderBar setCity={setCity} searchCity={searchCity} />
+      </div>
+      {/* <MainPage weatherData={weatherData} setCity={setCity} searchCity={searchCity} /> */}
+      <Results weatherData={weatherData} setCity={setCity} searchCity={searchCity} />
+      <DetailPage setCity={setCity} weatherData={weatherData} />
     </div>
   );
 }
 
 
 export default App;
-
 
 

@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import HeaderBar from './HeaderBar';
 import Results from './Results'; 
+import SearchBar from './SearchBar';
 
-function MainPage({searchCity}) {
-  const [city, setCity] = useState('');
+function MainPage({ setCity, searchCity }) {
+  // const [city, setCity] = useState('');
   const [weatherData, setWeatherData] = useState([]);
 
   function formatDate(dateTimeString) {
@@ -14,8 +15,8 @@ function MainPage({searchCity}) {
 
   return (
     <div className="main-page"> 
-      <Results weatherData={weatherData} formatDate={formatDate}/> 
-      <HeaderBar searchCity={searchCity} setCity={setCity} setWeatherData={setWeatherData} city={city}/>
+      <SearchBar searchCity={searchCity} setCity={setCity}  weatherData={weatherData} />
+      <Results setCity={setCity} weatherData={weatherData} formatDate={formatDate}/> 
     </div>
   );
 }

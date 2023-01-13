@@ -32,7 +32,7 @@ Number.prototype.kelvinToFahrenheit = function() {
                 description: data.weather[0].description,
             }}> 
             <h1 className="city">{props.city}</h1>
-            <img src={require(`/Users/nathanwhitley/Desktop/myweatherapp/src/Assets/weather-icons/10d.svg`)} alt="weather icon" />
+            <img src="../Assets/weather-icons/10d.svg" alt="icon" />
                        
             <div className="date">{formatDate(data.dt_txt)}</div>
           </Link>

@@ -1,5 +1,6 @@
 import React from "react";
 import { useLocation } from "react-router-dom"
+import HeaderBar from "./HeaderBar";
 
 const DetailPage = () => {
      const location = useLocation();
@@ -32,6 +33,5 @@ const DetailPage = () => {
 };
 
 export default DetailPage;
-
 
 

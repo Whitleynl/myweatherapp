@@ -18,7 +18,7 @@ const SearchBar = ({ setCity, searchCity }) => {
           placeholder="Enter a city"
           type="text"
           />
-        <button type="submit">Get Weather</button>
+        <button type="submit">Get Weather</button> 
       </form>
     </div>
   );
