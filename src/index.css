@@ -89,16 +89,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
   background: url('./Assets/pattern.svg') no-repeat center center/cover;
 }
 
-
 .DetailPage h1 {
   font-family: Futura;
-  font-size: 46px;
-  color: white;
-  margin: 0;
+  font-size: 45px;
+  color: #0f4311;
 }
 
 
@@ -108,7 +105,7 @@
 }
 
 .data-container {
-  margin: 10px;
+  margin-top: 5px;
   background-color: rgba(255, 255, 255, 0.8);
   padding: 20px;
   border-radius: 4px;
