@@ -12,30 +12,18 @@
   background: url('./Assets/pattern.svg') no-repeat center center/cover;
 }
 
-.HeaderBar {
-  background-color: #efbaba;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.header-bar {
+  background-color: hwb(30 4% 1%);
+  display: grid;
+  place-items: center;
   padding: 20px;
 }
 
 .header h1 { 
   font-family: 'Futura', sans-serif;
+  color: white;
   font-size: 40px;
   margin: auto auto 20px auto;
-}
-
-.search {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.search form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .search input {
@@ -77,15 +65,10 @@
   align-items: center;
   margin: 20px;
   padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  border: 3px solid white;
+  border-radius: px;
   text-decoration: none;
   color: black;
-}
-
-.Result h1 {
-  font-family: 'Courier New', Courier, monospace;
-  margin: 0;
 }
 
 .Result h2 {
@@ -107,7 +90,7 @@
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  background-color: #4CAF50;
+  background: url('./Assets/pattern.svg') no-repeat center center/cover;
 }
 
 .DetailPage h1 {
@@ -124,4 +107,12 @@
 ::placeholder {
   font-size: 18px;
   color: #ccc;
+}
+
+.weather-icon 
+
+.weather-icon {
+  width: 100px;
+  height: 100px;
+  object-fit: auto;
 }
