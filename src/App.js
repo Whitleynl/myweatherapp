@@ -27,7 +27,7 @@ function App() {
         <HeaderBar setCity={setCity} searchCity={searchCity} />
       </div>
       {/* <MainPage weatherData={weatherData} setCity={setCity} searchCity={searchCity} /> */}
-      <Results weatherData={weatherData} setCity={setCity} searchCity={searchCity} />
+      <Results weatherData={weatherData} setCity={setCity} city={city} searchCity={searchCity} />
       <DetailPage setCity={setCity} weatherData={weatherData} />
     </div>
   );
