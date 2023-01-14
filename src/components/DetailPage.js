@@ -23,11 +23,13 @@ const DetailPage = () => {
           <div>
           <div className="DetailPage">
           <h1>{formatDate(dt)}</h1>
+          <div className="data-container">
           <h3>City: {city}</h3>
           <h3>Description: {description}</h3>
-          <h3>min temp: {temp_min.kelvinToFahrenheit()}°</h3>
-          <h3>max temp: {temp_max.kelvinToFahrenheit()}°</h3>
-          <h3>humidity: {humidity}%</h3>
+          <h3>Min temp: {temp_min.kelvinToFahrenheit()}°</h3>
+          <h3>Max temp: {temp_max.kelvinToFahrenheit()}°</h3>
+          <h3>Humidity: {humidity}%</h3>
+          </div>
           </div>
           </div>
      );

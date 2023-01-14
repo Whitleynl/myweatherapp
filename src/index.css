@@ -61,53 +61,57 @@
 
 .Result {
   font-family: Futura;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.8);
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 20px;
   padding: 20px;
-  border: 3px solid white;
-  border-radius: px;
+  border-radius: 4px;
   text-decoration: none;
   color: black;
+}
+
+.Result h2 {
+  font-size: 20px;
+  margin: 10px;
 }
 
 .Result img {
   width: 50px;
   height: 50px;
-  margin-bottom: 10px;
+  margin: 20px;
 }
 
 .DetailPage {
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px;
   padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
   background: url('./Assets/pattern.svg') no-repeat center center/cover;
 }
 
+
 .DetailPage h1 {
   font-family: Futura;
-  font-size: 40px;
+  font-size: 46px;
+  color: white;
   margin: 0;
 }
 
 
 .DetailPage h3 {
   font-family: Futura;
-  margin: 0;
+  margin: 20px;
 }
 
-.DetailPage .header-bar {
-  background-color: hwb(17 9% 2%);
-  display: grid;
-  place-items: center;
+.data-container {
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 20px;
-  
+  border-radius: 4px;
 }
 
 ::placeholder {
