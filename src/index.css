@@ -93,6 +93,7 @@
 }
 
 .DetailPage h1 {
+  margin-top: 20px;
   font-family: Futura;
   font-size: 45px;
   color: #0f4311;
@@ -100,12 +101,13 @@
 
 
 .DetailPage h3 {
+  font-size: 20px;
   font-family: Futura;
   margin: 20px;
 }
 
 .data-container {
-  margin-top: 5px;
+  margin-top: 20px;
   background-color: rgba(255, 255, 255, 0.8);
   padding: 20px;
   border-radius: 4px;

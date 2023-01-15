@@ -1,6 +1,5 @@
 import React from "react";
 import { useLocation } from "react-router-dom"
-import HeaderBar from "./HeaderBar";
 
 const DetailPage = () => {
      const location = useLocation();
@@ -12,9 +11,9 @@ const DetailPage = () => {
 
      function formatDate(dateTimeString) {
           const date = new Date(dateTimeString);
-         const options = { weekday: 'long', month: 'short', day: 'numeric' };
-         return date.toLocaleDateString('en-US', options);
-         }
+          const options = { weekday: 'long', month: 'short', day: 'numeric' };
+     return date.toLocaleDateString('en-US', options);
+     }
 
      Number.prototype.kelvinToFahrenheit = function() {
           return Math.round((this - 273.15) * 9/5 + 32); 
@@ -22,7 +21,7 @@ const DetailPage = () => {
      
      return (
      <div className="DetailPage">
-          <h1>{formatDate(dt)}</h1>
+          <h1>{formatDate(dt)}</h1> 
           <div className="data-container">
           <h3>City: {city}</h3>
           <h3>Description: {description}</h3>

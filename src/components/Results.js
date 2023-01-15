@@ -59,7 +59,7 @@ Number.prototype.kelvinToFahrenheit = function() {
             to={`./DetailPage/${data.dt}`}
             state={{ 
                 city: props.city,
-                date: data.dt,
+                dt: data.dt_txt,
                 humidity: data.main.humidity,
                 temp_min: data.main.temp_min,
                 temp_max: data.main.temp_max,

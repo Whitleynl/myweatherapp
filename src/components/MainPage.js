@@ -3,7 +3,6 @@ import Results from './Results';
 import SearchBar from './SearchBar';
 
 function MainPage({ setCity, searchCity }) {
-  // const [city, setCity] = useState('');
   const [weatherData, setWeatherData] = useState([]);
 
   function formatDate(dateTimeString) {
