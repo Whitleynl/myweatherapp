@@ -1,6 +1,10 @@
-# Getting Started with Create React App
+A simple weather app. This was a wonderful learning experience for me. It is functional and returns accurate weather data. 
+It differs from the objective specs in a couple of ways that need to be clarified:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1) It takes only 'city' name, not 'city, state'. 
+2) After you submit your search, the results displayed are not 5 daily forecasts - they are the next 5 3 hour intervals. I realized this after spending enough time on the API call and return that I made the decision to live with that result in hopes that it still demonstrates some relevant skill. 
+
+Instructions to run the program:
 
 ## Available Scripts
 
