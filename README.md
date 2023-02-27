@@ -1,4 +1,4 @@
-A simple weather app. This was a wonderful learning experience for me. It is functional and returns accurate weather data. 
+A simple weather app. It is functional and returns accurate weather data. 
 It differs from the objective specs in a couple of ways that need to be clarified:
 
 1) It takes only 'city' name, not 'city, state'. 
